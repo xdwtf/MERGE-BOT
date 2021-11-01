@@ -9,6 +9,9 @@ RUN apt-get install -y ffmpeg
 RUN curl https://rclone.org/install.sh | bash
 RUN python -m pip install --upgrade pip
 
+RUN curl -O https://raw.githubusercontent.com/yashoswalyo/MERGE-BOT/master/requirements.txt && \
+    pip3 install -r requirements.txt --no-cache-dir
+
 WORKDIR /usr/src/app
 
 COPY . .
