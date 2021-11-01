@@ -11,6 +11,6 @@ RUN python -m pip install --upgrade pip
 
 WORKDIR /usr/src/app
 
-COPY ..
+COPY . .
 
 CMD ./x.sh
