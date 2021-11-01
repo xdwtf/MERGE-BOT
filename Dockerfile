@@ -11,8 +11,4 @@ RUN python -m pip install --upgrade pip
 
 WORKDIR /usr/src/app
 
-COPY . .
-
-RUN pip install -U -r requirements.txt
-
-CMD [ "python", "bot.py" ]
+CMD ./x.sh
